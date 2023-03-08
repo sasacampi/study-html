@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página inicial do Starbucks</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="./img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Novo</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+        <button class="button">Entrar</button>
+        
+    </header>
+
+    <div class="content">
+        <div class="txtbox">
+            <h2> Comece seu dia <br> com um bom <span>Café.</span></h2>
+            <p> Bem-vindo ao Café do Bosque, o lugar perfeito para desfrutar de um café delicioso 
+                e aconchegante em um ambiente relaxante e tranquilo. Nosso café é cuidadosamente 
+                selecionado e torrado, garantindo que cada xícara de café seja uma experiência única e satisfatória. 
+                Desde o primeiro gole, você sentirá a diferença em nosso café e entenderá 
+                por que somos tão apaixonados por ele. </p>
+                <a href="#">Saiba mais</a>
+            </div>
+                <div class="imgBox"> 
+                    <img src="./img/main.png" class="estab"></div>
+    </div>
+    <ul class="thumb"> 
+        <li><img src="./img/p1.png" onclick="imgSlider('./img/p1.png'); changeCircleColor('#017143')"></li>
+        <li><img src="./img/p5.png" onclick="imgSlider('./img/p5.png'); changeCircleColor('#eb7495')"></li>
+        <li><img src="./img/p6.png" onclick="imgSlider('./img/p6.png'); changeCircleColor('#d752b1')"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href="#"><img src="./img/facebook.png"></a></li>
+        <li><a href="#"><img src="./img/twitter.png"></a></li>
+        <li><a href="#"><img src="./img/instagram.png"></a></li>
+        
+    </ul>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+            
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+
+        }
+    </script>
+</section>
+</body>
+</html>
